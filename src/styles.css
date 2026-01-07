@@ -43,3 +43,25 @@ body {
   transform: translateY(-1px);
 }
 
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration-thickness: 3px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  text-decoration: none;
+}
+
+a:active {
+  color: #4338CA;
+}
+

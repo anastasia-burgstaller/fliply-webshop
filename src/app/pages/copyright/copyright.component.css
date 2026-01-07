@@ -1,0 +1,63 @@
+.page {
+  padding: 2.5rem 2rem 3.5rem;
+}
+
+
+.page-header {
+  margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+  margin-bottom: 0.75rem;
+}
+
+.page-header .lead {
+  line-height: 1.6;
+}
+
+.content section {
+  margin-top: 2.5rem;
+}
+
+.content section:first-of-type {
+  margin-top: 0;
+}
+
+.content h2 {
+  margin-bottom: 0.75rem;
+}
+
+.content p {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.license-table {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.license-table th,
+.license-table td {
+  padding: 0.75rem 0.9rem;
+  line-height: 1.45;
+  border: 1px solid var(--text);
+}
+
+.license-table th {
+  text-align: left;
+}
+
+.license-table tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .license-table {
+    font-size: 0.95rem;
+  }
+}

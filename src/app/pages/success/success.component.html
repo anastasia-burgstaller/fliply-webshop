@@ -1,6 +1,11 @@
 <section class="success-page">
+  <a class="secondary-button" (click)="playSound()">
+    Erfolgston abspielen
+  </a>
+
+  <audio #successSound src="sound/glocken.mp3"></audio>
+
   <div class="success-card" role="status" aria-live="polite">
-    <!-- Icon / Medienplatzhalter -->
     <div class="success-icon" aria-hidden="true">
       ✓
     </div>
