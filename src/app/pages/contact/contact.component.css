@@ -47,33 +47,3 @@ textarea:focus-visible {
 }
 
 
-.cta-button {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-
-  padding: 0.55rem 1.1rem;
-  border-radius: var(--radius);
-  font-weight: 700;
-
-  background: var(--primary);
-  color: #ffffff;
-  border: 1px solid var(--primary);
-
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    transform 0.15s ease
-}
-
-.cta-button:hover {
-  background: var(--panel);
-  color: var(--primary);
-  transform: translateY(-1px);
-}
-
-.cta-button:active {
-  transform: translateY(0);
-}
