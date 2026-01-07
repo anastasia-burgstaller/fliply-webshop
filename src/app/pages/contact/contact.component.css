@@ -1,0 +1,79 @@
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+}
+
+.lead {
+  max-width: 80ch;
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.form-field {
+  display: grid;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font: inherit;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+
+.cta-button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius);
+  font-weight: 700;
+
+  background: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--primary);
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease
+}
+
+.cta-button:hover {
+  background: var(--panel);
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
