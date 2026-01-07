@@ -109,7 +109,7 @@
   transform: translateY(0);
 }
 
-/* Fokus – WCAG (nur sichtbar bei Tastatur) */
+/* Fokus – WCAG */
 .main-nav a:focus-visible,
 .cta-button:focus-visible,
 .brand:focus-visible {
