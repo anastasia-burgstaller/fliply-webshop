@@ -30,13 +30,11 @@
 }
 
 .brand-logo {
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius);
-
-  color: var(--primary);
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
 }
 
 /* Navigation */
