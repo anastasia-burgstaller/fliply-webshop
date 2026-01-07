@@ -30,6 +30,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/fliply-webshop/",
+              "deployUrl": "/fliply-webshop/",
               "budgets": [
                 {
                   "type": "initial",
