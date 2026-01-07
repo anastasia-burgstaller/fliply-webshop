@@ -1,0 +1,29 @@
+<div
+  class="cookie-banner"
+  *ngIf="visible"
+  role="dialog"
+  aria-labelledby="cookie-title"
+  aria-describedby="cookie-desc"
+>
+  <div class="cookie-content">
+    <h2 id="cookie-title">Cookies & Datenschutz</h2>
+
+    <p id="cookie-desc">
+      Diese Website verwendet Cookies, um grundlegende Funktionen bereitzustellen
+      sowie für Analysezwecke. Die Verarbeitung erfolgt gemäß unserer
+      <a routerLink="/datenschutz">Datenschutzerklärung</a>.
+    </p>
+
+    <div class="actions">
+      <button class="secondary" (click)="rejectAll()">
+        Ablehnen
+      </button>
+      <button class="primary" (click)="acceptAll()">
+        Notwendige akzeptieren
+      </button>
+      <button class="primary" (click)="acceptAll()">
+        Alle akzeptieren
+      </button>
+    </div>
+  </div>
+</div>

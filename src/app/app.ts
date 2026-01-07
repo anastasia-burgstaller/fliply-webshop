@@ -4,10 +4,11 @@ import { filter } from 'rxjs/operators';
 
 import { Header } from './shared/header/header';
 import Footer from './shared/footer/footer';
+import { CookieBannerComponent } from './shared/cookie-banner/cookie-banner';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer],
+  imports: [RouterOutlet, Header, Footer, CookieBannerComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
