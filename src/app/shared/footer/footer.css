@@ -23,8 +23,8 @@
   display: grid;
   place-items: center;
   border-radius: var(--radius);
-  background: rgba(242,154,144,.55);
-  color: var(--text);
+
+  color: var(--primary);
   flex: 0 0 auto;
 }
 
@@ -38,12 +38,14 @@
   margin: 0;
   color: var(--text);
   max-width: 36ch;
+  opacity: 0.85; /* subtil “muted” ohne harte fixe Farbe */
 }
 
 .footer-title{
   font-size: .95rem;
   margin: 0 0 .6rem;
-  color: var(--primary);
+  color: var(--text);
+  font-weight: 700;
 }
 
 .footer-nav ul{
@@ -55,29 +57,41 @@
 }
 
 .footer-nav a{
-  color: var(--primary);
+  color: var(--text);
   text-decoration: none;
-  border-radius: 8px;
 
+  border-radius: 8px;
+  padding: .28rem .45rem;
+  margin-left: -.45rem; /* damit Hover-Fläche "einrastet" */
+  display: inline-flex;
+  align-items: center;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease
 }
 
+/* Farben switchen beim Hover (wie du’s magst) */
 .footer-nav a:hover{
-  background: rgba(242,154,144,.25);
-  text-decoration: none;
+  background: var(--primary);
+  color: #ffffff;
 }
 
 .footer-muted{
-  color: rgba(18,26,74,.75);
+  color: var(--text);
+  opacity: 0.7;
 }
 
 .footer-bottom{
-  padding: .9rem 0 1.4rem;
+  padding: .9rem 2rem 1.4rem; /* links/rechts konsistent mit grid */
   border-top: 1px solid var(--border);
-  color: rgba(18,26,74,.85);
+  color: var(--text);
+  opacity: 0.75;
 }
 
+.footer-nav a:focus-visible,
 a:focus-visible{
-  outline: 3px solid var(--primary);
+  outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
 

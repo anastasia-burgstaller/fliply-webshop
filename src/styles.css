@@ -1,17 +1,19 @@
 :root {
   /* Colors */
-  --bg: #FAE5DF;
-  --panel: #FBE9E6;
+  --bg: #F7F8FC;
+  --panel: #FFFFFF;
 
-  --text: #121A4A;
-  --primary: #28306B;
-  --accent: #F29A90;
+  --text: #111827;
+  --primary: #4F46E5;
+  --accent: #06B6D4;
 
-  --border: rgba(18, 26, 74, 0.15);
+  --border: #E5E7EB;
 
   /* Layout */
   --radius: 10px;
 }
+
+
 
 body {
   margin: 0;
