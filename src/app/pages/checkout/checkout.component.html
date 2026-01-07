@@ -1,1 +1,161 @@
-<p>checkout works!</p>
+<section class="checkout-page">
+  <header class="page-header">
+    <h1>Checkout</h1>
+    <p class="lead">
+      Du bist nur noch einen Schritt von Fliply Pro entfernt. Die Zahlungsabwicklung ist in dieser Webshop-Demo gemockt.
+    </p>
+  </header>
+
+  <div class="checkout-grid">
+    <!-- Formular -->
+    <form class="checkout-form" aria-label="Checkout Formular (Demo)">
+      <fieldset>
+        <legend>Kontaktdaten</legend>
+
+        <div class="field">
+          <label for="email">E-Mail-Adresse</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="field">
+          <label for="fullname">Vor- und Nachname</label>
+          <input id="fullname" name="fullname" type="text" autocomplete="name" required />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Rechnungsadresse</legend>
+
+        <div class="field">
+          <label for="street">Straße & Hausnummer</label>
+          <input id="street" name="street" type="text" autocomplete="street-address" required />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="zip">PLZ</label>
+            <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" required />
+          </div>
+
+          <div class="field">
+            <label for="city">Ort</label>
+            <input id="city" name="city" type="text" autocomplete="address-level2" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="country">Land</label>
+          <select id="country" name="country" autocomplete="country-name" required>
+            <option value="AT">Österreich</option>
+            <option value="DE">Deutschland</option>
+            <option value="CH">Schweiz</option>
+            <option value="other">Sonstiges</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Zahlungsinformation</legend>
+
+        <div class="field">
+          <label for="cardname">Name auf der Karte</label>
+          <input id="cardname" name="cardname" type="text" autocomplete="cc-name" required />
+        </div>
+
+        <div class="field">
+          <label for="cardnumber">Kartennummer</label>
+          <input
+            id="cardnumber"
+            name="cardnumber"
+            type="text"
+            inputmode="numeric"
+            autocomplete="cc-number"
+            placeholder="1234 5678 9012 3456"
+            required
+          />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="exp">Ablaufdatum</label>
+            <input
+              id="exp"
+              name="exp"
+              type="text"
+              inputmode="numeric"
+              autocomplete="cc-exp"
+              placeholder="MM/JJ"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="cvc">CVC</label>
+            <input
+              id="cvc"
+              name="cvc"
+              type="password"
+              inputmode="numeric"
+              autocomplete="cc-csc"
+              placeholder="123"
+              required
+            />
+          </div>
+        </div>
+      </fieldset>
+
+      <label class="checkbox">
+        <input type="checkbox" required />
+        <span>
+          Ich habe die <a routerLink="/lizenz">Lizenzbedingungen</a> gelesen und akzeptiere sie.
+        </span>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" required />
+        <span>
+          Ich habe die <a routerLink="/datenschutz">Datenschutzerklärung</a> gelesen.
+        </span>
+      </label>
+
+      <div class="actions">
+        <a routerLink="/preise" class="secondary-button">Zurück</a>
+        <a routerLink="/success" class="secondary-button" aria-label="Jetzt kaufen (Mock)">
+          Jetzt kaufen
+        </a>
+      </div>
+    </form>
+
+    <!-- Bestellübersicht -->
+    <aside class="summary" aria-label="Bestellübersicht">
+      <h2>Bestellübersicht</h2>
+
+      <div class="summary-card">
+        <p class="product-name">Fliply Pro</p>
+        <p class="product-desc">Unbegrenzte Decks • Spaced Repetition • Sync • Sharing</p>
+
+        <div class="line">
+          <span>Monatlich</span>
+          <span><strong>4,99 €</strong></span>
+        </div>
+        <div class="line muted">
+          <span>oder jährlich</span>
+          <span><strong>54,99 €</strong></span>
+        </div>
+
+        <hr />
+
+        <div class="line total">
+          <span>Gesamt (heute)</span>
+          <span><strong>4,99 €</strong></span>
+        </div>
+
+        <p class="small">
+          Du kannst dein Abo jederzeit kündigen. Details findest du in den Lizenzbedingungen.
+        </p>
+      </div>
+
+
+    </aside>
+  </div>
+</section>
