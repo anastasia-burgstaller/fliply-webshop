@@ -1,0 +1,84 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--panel);
+  border-bottom: 3px solid var(--border);
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+/* Brand */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary);
+}
+
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--text);
+}
+
+/* Navigation */
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  background: rgba(242, 154, 144, 0.25);
+}
+
+.main-nav a.active {
+  background: rgba(242, 154, 144, 0.45);
+  font-weight: 600;
+}
+
+/* CTA */
+.cta-button {
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+}
+
+.cta-button:hover {
+  background: #1f2555;
+}
+
+/* Fokus – WCAG */
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
